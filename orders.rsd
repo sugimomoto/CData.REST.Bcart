@@ -1,0 +1,115 @@
+<api:script xmlns:api="http://apiscript.com/ns?v1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- See Column Definitions to specify column behavior and use XPaths to extract column values from JSON. -->
+  <api:info title="orders" desc="Generated schema file." xmlns:other="http://apiscript.com/ns?v1">
+    <!-- You can modify the name, type, and column size here. -->
+    <attr name="admin_message"           xs:type="string"  readonly="false"              other:xPath="/json/orders/admin_message"               />
+    <attr name="affiliate_id"            xs:type="string"   readonly="false"              other:xPath="/json/orders/affiliate_id"                />
+    <attr name="COD_cost"                xs:type="integer"  readonly="false"              other:xPath="/json/orders/COD_cost"                    />
+    <attr name="code"                    xs:type="string"   readonly="false"              other:xPath="/json/orders/code"                        />
+    <attr name="customer_address1"       xs:type="string"   readonly="false"              other:xPath="/json/orders/customer_address1"           />
+    <attr name="customer_address2"       xs:type="string"   readonly="false"              other:xPath="/json/orders/customer_address2"           />
+    <attr name="customer_address3"       xs:type="string"   readonly="false"              other:xPath="/json/orders/customer_address3"           />
+    <attr name="customer_comp_name"      xs:type="string"   readonly="false"              other:xPath="/json/orders/customer_comp_name"          />
+    <attr name="customer_custom1"        xs:type="string"  readonly="false"              other:xPath="/json/orders/customer_custom1"            />
+    <attr name="customer_custom2"        xs:type="string"  readonly="false"              other:xPath="/json/orders/customer_custom2"            />
+    <attr name="customer_custom3"        xs:type="string"  readonly="false"              other:xPath="/json/orders/customer_custom3"            />
+    <attr name="customer_department"     xs:type="string"   readonly="false"              other:xPath="/json/orders/customer_department"         />
+    <attr name="customer_email"          xs:type="string"   readonly="false"              other:xPath="/json/orders/customer_email"              />
+    <attr name="customer_ext_id"         xs:type="string"   readonly="false"              other:xPath="/json/orders/customer_ext_id"             />
+    <attr name="customer_id"             xs:type="integer"  readonly="false"              other:xPath="/json/orders/customer_id"                 />
+    <attr name="customer_message"        xs:type="string"   readonly="false"              other:xPath="/json/orders/customer_message"            />
+    <attr name="customer_mobile_phone"   xs:type="string"   readonly="false"              other:xPath="/json/orders/customer_mobile_phone"       />
+    <attr name="customer_name"           xs:type="string"   readonly="false"              other:xPath="/json/orders/customer_name"               />
+    <attr name="customer_parent_id"      xs:type="string"  readonly="false"              other:xPath="/json/orders/customer_parent_id"          />
+    <attr name="customer_pref"           xs:type="string"   readonly="false"              other:xPath="/json/orders/customer_pref"               />
+    <attr name="customer_price_group_id" xs:type="string"  readonly="false"              other:xPath="/json/orders/customer_price_group_id"     />
+    <attr name="customer_salesman_id"    xs:type="string"  readonly="false"              other:xPath="/json/orders/customer_salesman_id"        />
+    <attr name="customer_tel"            xs:type="string"   readonly="false"              other:xPath="/json/orders/customer_tel"                />
+    <attr name="customer_zip"            xs:type="string"   readonly="false"              other:xPath="/json/orders/customer_zip"                />
+    <attr name="enquete1"                xs:type="string"  readonly="false"              other:xPath="/json/orders/enquete1"                    />
+    <attr name="enquete2"                xs:type="string"  readonly="false"              other:xPath="/json/orders/enquete2"                    />
+    <attr name="enquete3"                xs:type="string"  readonly="false"              other:xPath="/json/orders/enquete3"                    />
+    <attr name="enquete4"                xs:type="string"  readonly="false"              other:xPath="/json/orders/enquete4"                    />
+    <attr name="enquete5"                xs:type="string"  readonly="false"              other:xPath="/json/orders/enquete5"                    />
+    <attr name="estimate_id"             xs:type="string"  readonly="false"              other:xPath="/json/orders/estimate_id"                 />
+    <attr name="final_price"             xs:type="integer"  readonly="false"              other:xPath="/json/orders/final_price"                 />
+    <attr name="get_point"               xs:type="integer"  readonly="false"              other:xPath="/json/orders/get_point"                   />
+    <attr name="id"                      xs:type="integer"  readonly="false"              other:xPath="/json/orders/id"                          />
+    <attr name="memo"                    xs:type="string"  readonly="false"              other:xPath="/json/orders/memo"                        />
+    <attr name="order_totals.tax"        xs:type="integer"  readonly="false"              other:xPath="/json/orders/order_totals/tax"            />
+    <attr name="order_totals.tax_rate"   xs:type="string"   readonly="false"              other:xPath="/json/orders/order_totals/tax_rate"       />
+    <attr name="order_totals:_id"        xs:type="string"   readonly="false"  key="true"  other:xPath="/json/orders/order_totals/_id"            />
+    <attr name="ordered_at"              xs:type="datetime" readonly="false"              other:xPath="/json/orders/ordered_at"                  />
+    <attr name="orders:_id"              xs:type="string"   readonly="false"  key="true"  other:xPath="/json/orders/_id"                         />
+    <attr name="payment"                 xs:type="string"   readonly="false"              other:xPath="/json/orders/payment"                     />
+    <attr name="payment_at"              xs:type="string"  readonly="false"              other:xPath="/json/orders/payment_at"                  />
+    <attr name="shipping_cost"           xs:type="integer"  readonly="false"              other:xPath="/json/orders/shipping_cost"               />
+    <attr name="status"                  xs:type="string"   readonly="false"              other:xPath="/json/orders/status"                      />
+    <attr name="tax"                     xs:type="integer"  readonly="false"              other:xPath="/json/orders/tax"                         />
+    <attr name="tax_rate"                xs:type="string"   readonly="false"              other:xPath="/json/orders/tax_rate"                    />
+    <attr name="total"                   xs:type="integer"  readonly="false"              other:xPath="/json/orders/order_totals/total"          />
+    <attr name="total_incl_tax"          xs:type="integer"  readonly="false"              other:xPath="/json/orders/order_totals/total_incl_tax" />
+    <attr name="total_price"             xs:type="integer"  readonly="false"              other:xPath="/json/orders/total_price"                 />
+    <attr name="use_point"               xs:type="integer"  readonly="false"              other:xPath="/json/orders/use_point"                   />
+
+    <attr name="meta_limit"  xs:type="interger"  readonly="false"              other:xPath="/json/meta/limit"  />
+    <attr name="meta_offset"  xs:type="interger"  readonly="false"              other:xPath="/json/meta/offset"  />
+    <attr name="meta_total"  xs:type="interger"  readonly="false"              other:xPath="/json/meta/total"  />
+
+  </api:info>
+
+  <api:set attr="DataModel" value="FLATTENEDDOCUMENTS" />
+
+  <api:set attr="ResourceName" value="orders"/>
+
+  <api:set attr="JSONPath" value="$.json;$.json.orders" />
+  <api:set attr="ContentType" value="application/json"/>
+  <api:set attr="header:name" value="Authorization"/>
+  <api:set attr="header:value" value="Bearer [_connection.AccessToken]"/>
+
+  <api:set attr="enablepaging" value="true"/>
+  <api:set attr="limit" value="100"/>
+  <api:set attr="offset" value="[rows@next | def('0')]"/>
+
+  <api:set attr="URI" value="https://api.bcart.jp/api/v1/[ResourceName]?limit=[limit]&offset=[offset]" />
+
+  <!-- The GET method corresponds to SELECT. Here you can override the default processing of the SELECT statement. The results of processing are pushed to the schema's output. See SELECT Execution for more information. -->
+  <api:script method="GET">
+    <api:call op="jsonproviderGet" output="_response">
+
+      <api:if attr="_response.meta_total" value="[offset]" operator="greaterthan">
+        <api:set attr="rows@next" value="[offset | add([limit])]"/>
+        <api:push/>
+      </api:if>
+    </api:call>
+  </api:script>
+
+  <!-- To add support for INSERTS please see the INSERT Execution page within the help for further information and examples. -->
+  <api:script method="POST">
+    <api:set attr="method" value="POST"/>
+    <api:call op="jsonproviderGet">
+      <api:throw code="500" desc="Inserts are not currently supported."/>
+      <api:push/>
+    </api:call>
+  </api:script>
+
+  <!-- To add support for UPDATES please see the UPDATE Execution page within the help for further information and examples. -->
+  <api:script method="MERGE">
+    <api:set attr="method" value="PUT"/>
+    <api:call op="jsonproviderGet">
+      <api:throw code="500" desc="Updates are not currently supported."/>
+      <api:push/>
+    </api:call>
+  </api:script>
+
+  <!-- To add support for DELETES please see the DELETE Execution page within the help for further information and examples. -->
+  <api:script method="DELETE">
+    <api:set attr="method" value="DELETE"/>
+    <api:call op="jsonproviderGet">
+      <api:throw code="500" desc="Deletes are not currently supported."/>
+      <api:push/>
+    </api:call>
+  </api:script>
+
+</api:script>

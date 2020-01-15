@@ -1,0 +1,117 @@
+<api:script xmlns:api="http://apiscript.com/ns?v1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- See Column Definitions to specify column behavior and use XPaths to extract column values from JSON. -->
+  <api:info title="products" desc="Generated schema file." xmlns:other="http://apiscript.com/ns?v1">
+    <!-- You can modify the name, type, and column size here. -->
+    <attr name="append_text"          xs:type="string"  readonly="false"              other:xPath="/json/products/append_text"          />
+    <attr name="catch_copy"           xs:type="string"   readonly="false"              other:xPath="/json/products/catch_copy"           />
+    <attr name="category_id"          xs:type="integer"  readonly="false"              other:xPath="/json/products/category_id"          />
+    <attr name="caution"              xs:type="string"   readonly="false"              other:xPath="/json/products/caution"              />
+    <attr name="custom1"              xs:type="string"   readonly="false"              other:xPath="/json/products/custom1"              />
+    <attr name="custom2"              xs:type="string"   readonly="false"              other:xPath="/json/products/custom2"              />
+    <attr name="custom3"              xs:type="string"   readonly="false"              other:xPath="/json/products/custom3"              />
+    <attr name="description"          xs:type="string"   readonly="false"              other:xPath="/json/products/description"          />
+    <attr name="feature_id1"          xs:type="integer"  readonly="false"              other:xPath="/json/products/feature_id1"          />
+    <attr name="feature_id2"          xs:type="string"  readonly="false"              other:xPath="/json/products/feature_id2"          />
+    <attr name="feature_id3"          xs:type="string"  readonly="false"              other:xPath="/json/products/feature_id3"          />
+    <attr name="file_download"        xs:type="string"  readonly="false"              other:xPath="/json/products/file_download"        />
+    <attr name="flag"                 xs:type="string"   readonly="false"              other:xPath="/json/products/flag"                 />
+    <attr name="hanbai_end"           xs:type="string"  readonly="false"              other:xPath="/json/products/hanbai_end"           />
+    <attr name="hanbai_start"         xs:type="string"  readonly="false"              other:xPath="/json/products/hanbai_start"         />
+    <attr name="id"                   xs:type="integer"  readonly="false"              other:xPath="/json/products/id"                   />
+    <attr name="image"                xs:type="string"   readonly="false"              other:xPath="/json/products/image"                />
+    <attr name="made_in"              xs:type="string"   readonly="false"              other:xPath="/json/products/made_in"              />
+    <attr name="main_no"              xs:type="string"   readonly="false"              other:xPath="/json/products/main_no"              />
+    <attr name="meta_description"     xs:type="string"  readonly="false"              other:xPath="/json/products/meta_description"     />
+    <attr name="meta_keywords"        xs:type="string"  readonly="false"              other:xPath="/json/products/meta_keywords"        />
+    <attr name="meta_title"           xs:type="string"  readonly="false"              other:xPath="/json/products/meta_title"           />
+    <attr name="middle_text"          xs:type="string"  readonly="false"              other:xPath="/json/products/middle_text"          />
+    <attr name="name"                 xs:type="string"   readonly="false"              other:xPath="/json/products/name"                 />
+    <attr name="prepend_text"         xs:type="string"  readonly="false"              other:xPath="/json/products/prepend_text"         />
+    <attr name="priority"             xs:type="integer"  readonly="false"              other:xPath="/json/products/priority"             />
+    <attr name="products:_id"         xs:type="string"   readonly="false"  key="true"  other:xPath="/json/products/_id"                  />
+    <attr name="recommend_product_id" xs:type="string"   readonly="false"              other:xPath="/json/products/recommend_product_id" />
+    <attr name="rv_append_text"       xs:type="string"  readonly="false"              other:xPath="/json/products/rv_append_text"       />
+    <attr name="rv_middle_text"       xs:type="string"  readonly="false"              other:xPath="/json/products/rv_middle_text"       />
+    <attr name="rv_prepend_text"      xs:type="string"  readonly="false"              other:xPath="/json/products/rv_prepend_text"      />
+    <attr name="size"                 xs:type="string"   readonly="false"              other:xPath="/json/products/size"                 />
+    <attr name="sozai"                xs:type="string"   readonly="false"              other:xPath="/json/products/sozai"                />
+    <attr name="sub_category_id"      xs:type="integer"  readonly="false"              other:xPath="/json/products/sub_category_id"      />
+    <attr name="sub_images.1.caption" xs:type="string"  readonly="false"              other:xPath="/json/products/sub_images/1/caption" />
+    <attr name="sub_images.1.image"   xs:type="string"   readonly="false"              other:xPath="/json/products/sub_images/1/image"   />
+    <attr name="sub_images.2.caption" xs:type="string"  readonly="false"              other:xPath="/json/products/sub_images/2/caption" />
+    <attr name="sub_images.2.image"   xs:type="string"   readonly="false"              other:xPath="/json/products/sub_images/2/image"   />
+    <attr name="sub_images.3.caption" xs:type="string"  readonly="false"              other:xPath="/json/products/sub_images/3/caption" />
+    <attr name="sub_images.3.image"   xs:type="string"   readonly="false"              other:xPath="/json/products/sub_images/3/image"   />
+    <attr name="sub_images.4.caption" xs:type="string"  readonly="false"              other:xPath="/json/products/sub_images/4/caption" />
+    <attr name="sub_images.4.image"   xs:type="string"   readonly="false"              other:xPath="/json/products/sub_images/4/image"   />
+    <attr name="sub_images.5.caption" xs:type="string"  readonly="false"              other:xPath="/json/products/sub_images/5/caption" />
+    <attr name="sub_images.5.image"   xs:type="string"   readonly="false"              other:xPath="/json/products/sub_images/5/image"   />
+    <attr name="sub_images.6.caption" xs:type="string"  readonly="false"              other:xPath="/json/products/sub_images/6/caption" />
+    <attr name="sub_images.6.image"   xs:type="string"   readonly="false"              other:xPath="/json/products/sub_images/6/image"   />
+    <attr name="tag"                  xs:type="string"   readonly="false"              other:xPath="/json/products/tag"                  />
+    <attr name="updated_at"           xs:type="datetime" readonly="false"              other:xPath="/json/products/updated_at"           />
+    <attr name="view_group_filter"    xs:type="string"   readonly="false"              other:xPath="/json/products/view_group_filter"    />
+    <attr name="view_pattern"         xs:type="integer"  readonly="false"              other:xPath="/json/products/view_pattern"         />
+    <attr name="visible_customer_id"  xs:type="string"  readonly="false"              other:xPath="/json/products/visible_customer_id"  />
+
+    <attr name="meta_limit"  xs:type="interger"  readonly="false"              other:xPath="/json/meta/limit"  />
+    <attr name="meta_offset"  xs:type="interger"  readonly="false"              other:xPath="/json/meta/offset"  />
+    <attr name="meta_total"  xs:type="interger"  readonly="false"              other:xPath="/json/meta/total"  />
+
+  </api:info>
+
+  <api:set attr="DataModel" value="FLATTENEDDOCUMENTS" />
+
+  <api:set attr="ResourceName" value="products"/>
+
+  <api:set attr="JSONPath" value="$.json;$.json.products" />
+  <api:set attr="ContentType" value="application/json"/>
+  <api:set attr="header:name" value="Authorization"/>
+  <api:set attr="header:value" value="Bearer [_connection.AccessToken]"/>
+
+  <api:set attr="enablepaging" value="true"/>
+  <api:set attr="limit" value="100"/>
+  <api:set attr="offset" value="[rows@next | def('0')]"/>
+
+  <api:set attr="URI" value="https://api.bcart.jp/api/v1/[ResourceName]?limit=[limit]&offset=[offset]" />
+
+  <!-- The GET method corresponds to SELECT. Here you can override the default processing of the SELECT statement. The results of processing are pushed to the schema's output. See SELECT Execution for more information. -->
+  <api:script method="GET">
+    <api:call op="jsonproviderGet" output="_response">
+
+      <api:if attr="_response.meta_total" value="[offset]" operator="greaterthan">
+        <api:set attr="rows@next" value="[offset | add([limit])]"/>
+        <api:push/>
+      </api:if>
+    </api:call>
+  </api:script>
+
+  <!-- To add support for INSERTS please see the INSERT Execution page within the help for further information and examples. -->
+  <api:script method="POST">
+    <api:set attr="method" value="POST"/>
+    <api:call op="jsonproviderGet">
+      <api:throw code="500" desc="Inserts are not currently supported."/>
+      <api:push/>
+    </api:call>
+  </api:script>
+
+  <!-- To add support for UPDATES please see the UPDATE Execution page within the help for further information and examples. -->
+  <api:script method="MERGE">
+    <api:set attr="method" value="PUT"/>
+    <api:call op="jsonproviderGet">
+      <api:throw code="500" desc="Updates are not currently supported."/>
+      <api:push/>
+    </api:call>
+  </api:script>
+
+  <!-- To add support for DELETES please see the DELETE Execution page within the help for further information and examples. -->
+  <api:script method="DELETE">
+    <api:set attr="method" value="DELETE"/>
+    <api:call op="jsonproviderGet">
+      <api:throw code="500" desc="Deletes are not currently supported."/>
+      <api:push/>
+    </api:call>
+  </api:script>
+
+</api:script>

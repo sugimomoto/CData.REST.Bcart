@@ -1,0 +1,78 @@
+<api:script xmlns:api="http://apiscript.com/ns?v1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- See Column Definitions to specify column behavior and use XPaths to extract column values from JSON. -->
+  <api:info title="other_addresses" desc="Generated schema file." xmlns:other="http://apiscript.com/ns?v1">
+    <!-- You can modify the name, type, and column size here. -->
+    <attr name="address1"            xs:type="string"  readonly="false"              other:xPath="/json/other_addresses/address1"         />
+    <attr name="address2"            xs:type="string"  readonly="false"              other:xPath="/json/other_addresses/address2"         />
+    <attr name="address3"            xs:type="string"  readonly="false"              other:xPath="/json/other_addresses/address3"         />
+    <attr name="comp_name"           xs:type="string"  readonly="false"              other:xPath="/json/other_addresses/comp_name"        />
+    <attr name="customer_id"         xs:type="integer" readonly="false"              other:xPath="/json/other_addresses/customer_id"      />
+    <attr name="department"          xs:type="string"  readonly="false"              other:xPath="/json/other_addresses/department"       />
+    <attr name="destination_code"    xs:type="string" readonly="false"              other:xPath="/json/other_addresses/destination_code" />
+    <attr name="id"                  xs:type="integer" readonly="false"              other:xPath="/json/other_addresses/id"               />
+    <attr name="name"                xs:type="string"  readonly="false"              other:xPath="/json/other_addresses/name"             />
+    <attr name="other_addresses:_id" xs:type="string"  readonly="false"  key="true"  other:xPath="/json/other_addresses/_id"              />
+    <attr name="pref"                xs:type="string"  readonly="false"              other:xPath="/json/other_addresses/pref"             />
+    <attr name="tel"                 xs:type="string"  readonly="false"              other:xPath="/json/other_addresses/tel"              />
+    <attr name="zip"                 xs:type="string"  readonly="false"              other:xPath="/json/other_addresses/zip"              />
+
+    <attr name="meta_limit"  xs:type="interger"  readonly="false"              other:xPath="/json/meta/limit"  />
+    <attr name="meta_offset"  xs:type="interger"  readonly="false"              other:xPath="/json/meta/offset"  />
+    <attr name="meta_total"  xs:type="interger"  readonly="false"              other:xPath="/json/meta/total"  />
+
+  </api:info>
+
+  <api:set attr="DataModel" value="FLATTENEDDOCUMENTS" />
+
+  <api:set attr="ResourceName" value="other_addresses"/>
+
+  <api:set attr="JSONPath" value="$.json;$.json.other_addresses" />
+  <api:set attr="ContentType" value="application/json"/>
+  <api:set attr="header:name" value="Authorization"/>
+  <api:set attr="header:value" value="Bearer [_connection.AccessToken]"/>
+
+  <api:set attr="enablepaging" value="true"/>
+  <api:set attr="limit" value="100"/>
+  <api:set attr="offset" value="[rows@next | def('0')]"/>
+
+  <api:set attr="URI" value="https://api.bcart.jp/api/v1/[ResourceName]?limit=[limit]&offset=[offset]" />
+
+  <!-- The GET method corresponds to SELECT. Here you can override the default processing of the SELECT statement. The results of processing are pushed to the schema's output. See SELECT Execution for more information. -->
+  <api:script method="GET">
+    <api:call op="jsonproviderGet" output="_response">
+
+      <api:if attr="_response.meta_total" value="[offset]" operator="greaterthan">
+        <api:set attr="rows@next" value="[offset | add([limit])]"/>
+        <api:push/>
+      </api:if>
+    </api:call>
+  </api:script>
+  <!-- To add support for INSERTS please see the INSERT Execution page within the help for further information and examples. -->
+  <api:script method="POST">
+    <api:set attr="method" value="POST"/>
+    <api:call op="jsonproviderGet">
+      <api:throw code="500" desc="Inserts are not currently supported."/>
+      <api:push/>
+    </api:call>
+  </api:script>
+
+  <!-- To add support for UPDATES please see the UPDATE Execution page within the help for further information and examples. -->
+  <api:script method="MERGE">
+    <api:set attr="method" value="PUT"/>
+    <api:call op="jsonproviderGet">
+      <api:throw code="500" desc="Updates are not currently supported."/>
+      <api:push/>
+    </api:call>
+  </api:script>
+
+  <!-- To add support for DELETES please see the DELETE Execution page within the help for further information and examples. -->
+  <api:script method="DELETE">
+    <api:set attr="method" value="DELETE"/>
+    <api:call op="jsonproviderGet">
+      <api:throw code="500" desc="Deletes are not currently supported."/>
+      <api:push/>
+    </api:call>
+  </api:script>
+
+</api:script>

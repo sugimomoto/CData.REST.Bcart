@@ -1,0 +1,124 @@
+<api:script xmlns:api="http://apiscript.com/ns?v1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- See Column Definitions to specify column behavior and use XPaths to extract column values from JSON. -->
+  <api:info title="product_sets" desc="Generated schema file." xmlns:other="http://apiscript.com/ns?v1">
+    <!-- You can modify the name, type, and column size here. -->
+    <attr name="custom1"                       xs:type="string" readonly="false"              other:xPath="/json/product_sets/custom1"                       />
+    <attr name="custom2"                       xs:type="string" readonly="false"              other:xPath="/json/product_sets/custom2"                       />
+    <attr name="custom3"                       xs:type="string" readonly="false"              other:xPath="/json/product_sets/custom3"                       />
+    <attr name="group_price.1.fixed_price"     xs:type="integer" readonly="false"              other:xPath="/json/product_sets/group_price/1/fixed_price"     />
+    <attr name="group_price.1.name"            xs:type="string"  readonly="false"              other:xPath="/json/product_sets/group_price/1/name"            />
+    <attr name="group_price.1.rate"            xs:type="string"  readonly="false"              other:xPath="/json/product_sets/group_price/1/rate"            />
+    <attr name="group_price.1.unit_price"      xs:type="integer" readonly="false"              other:xPath="/json/product_sets/group_price/1/unit_price"      />
+    <attr name="group_price.1.volume_discount" xs:type="string" readonly="false"              other:xPath="/json/product_sets/group_price/1/volume_discount" />
+    <attr name="group_price.2.fixed_price"     xs:type="integer" readonly="false"              other:xPath="/json/product_sets/group_price/2/fixed_price"     />
+    <attr name="group_price.2.name"            xs:type="string"  readonly="false"              other:xPath="/json/product_sets/group_price/2/name"            />
+    <attr name="group_price.2.rate"            xs:type="string"  readonly="false"              other:xPath="/json/product_sets/group_price/2/rate"            />
+    <attr name="group_price.2.unit_price"      xs:type="integer" readonly="false"              other:xPath="/json/product_sets/group_price/2/unit_price"      />
+    <attr name="group_price.2.volume_discount" xs:type="string" readonly="false"              other:xPath="/json/product_sets/group_price/2/volume_discount" />
+    <attr name="group_price.3.fixed_price"     xs:type="integer" readonly="false"              other:xPath="/json/product_sets/group_price/3/fixed_price"     />
+    <attr name="group_price.3.name"            xs:type="string"  readonly="false"              other:xPath="/json/product_sets/group_price/3/name"            />
+    <attr name="group_price.3.rate"            xs:type="string"  readonly="false"              other:xPath="/json/product_sets/group_price/3/rate"            />
+    <attr name="group_price.3.unit_price"      xs:type="integer" readonly="false"              other:xPath="/json/product_sets/group_price/3/unit_price"      />
+    <attr name="group_price.3.volume_discount" xs:type="string" readonly="false"              other:xPath="/json/product_sets/group_price/3/volume_discount" />
+    <attr name="group_price.4.fixed_price"     xs:type="string" readonly="false"              other:xPath="/json/product_sets/group_price/4/fixed_price"     />
+    <attr name="group_price.4.name"            xs:type="string"  readonly="false"              other:xPath="/json/product_sets/group_price/4/name"            />
+    <attr name="group_price.4.rate"            xs:type="string"  readonly="false"              other:xPath="/json/product_sets/group_price/4/rate"            />
+    <attr name="group_price.4.unit_price"      xs:type="double"  readonly="false"              other:xPath="/json/product_sets/group_price/4/unit_price"      />
+    <attr name="group_price.4.volume_discount" xs:type="string" readonly="false"              other:xPath="/json/product_sets/group_price/4/volume_discount" />
+    <attr name="group_price.n.fixed_price"     xs:type="string" readonly="false"              other:xPath="/json/product_sets/group_price/n/fixed_price"     />
+    <attr name="group_price.n.name"            xs:type="string"  readonly="false"              other:xPath="/json/product_sets/group_price/n/name"            />
+    <attr name="group_price.n.rate"            xs:type="string"  readonly="false"              other:xPath="/json/product_sets/group_price/n/rate"            />
+    <attr name="group_price.n.unit_price"      xs:type="integer" readonly="false"              other:xPath="/json/product_sets/group_price/n/unit_price"      />
+    <attr name="group_price.n.volume_discount" xs:type="string" readonly="false"              other:xPath="/json/product_sets/group_price/n/volume_discount" />
+    <attr name="id"                            xs:type="integer" readonly="false"              other:xPath="/json/product_sets/id"                            />
+    <attr name="jan_code"                      xs:type="string" readonly="false"              other:xPath="/json/product_sets/jan_code"                      />
+    <attr name="jodai"                         xs:type="integer" readonly="false"              other:xPath="/json/product_sets/jodai"                         />
+    <attr name="jodai_type"                    xs:type="string"  readonly="false"              other:xPath="/json/product_sets/jodai_type"                    />
+    <attr name="location_no"                   xs:type="string" readonly="false"              other:xPath="/json/product_sets/location_no"                   />
+    <attr name="max_order"                     xs:type="string" readonly="false"              other:xPath="/json/product_sets/max_order"                     />
+    <attr name="min_order"                     xs:type="string" readonly="false"              other:xPath="/json/product_sets/min_order"                     />
+    <attr name="name"                          xs:type="string"  readonly="false"              other:xPath="/json/product_sets/name"                          />
+    <attr name="priority"                      xs:type="integer" readonly="false"              other:xPath="/json/product_sets/priority"                      />
+    <attr name="product_id"                    xs:type="integer" readonly="false"              other:xPath="/json/product_sets/product_id"                    />
+    <attr name="product_no"                    xs:type="string"  readonly="false"              other:xPath="/json/product_sets/product_no"                    />
+    <attr name="product_sets:_id"              xs:type="string"  readonly="false"  key="true"  other:xPath="/json/product_sets/_id"                           />
+    <attr name="quantity"                      xs:type="integer" readonly="false"              other:xPath="/json/product_sets/quantity"                      />
+    <attr name="set_flag"                      xs:type="string"  readonly="false"              other:xPath="/json/product_sets/set_flag"                      />
+    <attr name="shipping_group_id"             xs:type="integer" readonly="false"              other:xPath="/json/product_sets/shipping_group_id"             />
+    <attr name="shipping_size"                 xs:type="integer" readonly="false"              other:xPath="/json/product_sets/shipping_size"                 />
+    <attr name="special_price"                 xs:type="string" readonly="false"              other:xPath="/json/product_sets/special_price"                 />
+    <attr name="stock"                         xs:type="integer" readonly="false"              other:xPath="/json/product_sets/stock"                         />
+    <attr name="stock_few"                     xs:type="integer" readonly="false"              other:xPath="/json/product_sets/stock_few"                     />
+    <attr name="stock_flag"                    xs:type="integer" readonly="false"              other:xPath="/json/product_sets/stock_flag"                    />
+    <attr name="stock_parent"                  xs:type="string" readonly="false"              other:xPath="/json/product_sets/stock_parent"                  />
+    <attr name="stock_parent.9"                xs:type="integer" readonly="false"              other:xPath="/json/product_sets/stock_parent/9"                />
+    <attr name="stock_view_id"                 xs:type="integer" readonly="false"              other:xPath="/json/product_sets/stock_view_id"                 />
+    <attr name="tax_type_id"                   xs:type="integer" readonly="false"              other:xPath="/json/product_sets/tax_type_id"                   />
+    <attr name="unit"                          xs:type="string"  readonly="false"              other:xPath="/json/product_sets/unit"                          />
+    <attr name="unit_price"                    xs:type="integer" readonly="false"              other:xPath="/json/product_sets/unit_price"                    />
+    <attr name="updated_at"                    xs:type="string" readonly="false"              other:xPath="/json/product_sets/updated_at"                    />
+    <attr name="view_group_filter"             xs:type="string" readonly="false"              other:xPath="/json/product_sets/view_group_filter"             />
+    <attr name="visible_customer_id"           xs:type="string" readonly="false"              other:xPath="/json/product_sets/visible_customer_id"           />
+    <attr name="volume_discount"               xs:type="string" readonly="false"              other:xPath="/json/product_sets/volume_discount"               />
+
+    <attr name="meta_limit"  xs:type="interger"  readonly="false"              other:xPath="/json/meta/limit"  />
+    <attr name="meta_offset"  xs:type="interger"  readonly="false"              other:xPath="/json/meta/offset"  />
+    <attr name="meta_total"  xs:type="interger"  readonly="false"              other:xPath="/json/meta/total"  />
+
+  </api:info>
+
+  <api:set attr="DataModel" value="FLATTENEDDOCUMENTS" />
+
+  <api:set attr="ResourceName" value="product_sets"/>
+
+  <api:set attr="JSONPath" value="$.json;$.json.product_sets" />
+  <api:set attr="ContentType" value="application/json"/>
+  <api:set attr="header:name" value="Authorization"/>
+  <api:set attr="header:value" value="Bearer [_connection.AccessToken]"/>
+
+  <api:set attr="enablepaging" value="true"/>
+  <api:set attr="limit" value="100"/>
+  <api:set attr="offset" value="[rows@next | def('0')]"/>
+
+  <api:set attr="URI" value="https://api.bcart.jp/api/v1/[ResourceName]?limit=[limit]&offset=[offset]" />
+
+  <!-- The GET method corresponds to SELECT. Here you can override the default processing of the SELECT statement. The results of processing are pushed to the schema's output. See SELECT Execution for more information. -->
+  <api:script method="GET">
+    <api:call op="jsonproviderGet" output="_response">
+
+      <api:if attr="_response.meta_total" value="[offset]" operator="greaterthan">
+        <api:set attr="rows@next" value="[offset | add([limit])]"/>
+        <api:push/>
+      </api:if>
+    </api:call>
+  </api:script>
+
+  <!-- To add support for INSERTS please see the INSERT Execution page within the help for further information and examples. -->
+  <api:script method="POST">
+    <api:set attr="method" value="POST"/>
+    <api:call op="jsonproviderGet">
+      <api:throw code="500" desc="Inserts are not currently supported."/>
+      <api:push/>
+    </api:call>
+  </api:script>
+
+  <!-- To add support for UPDATES please see the UPDATE Execution page within the help for further information and examples. -->
+  <api:script method="MERGE">
+    <api:set attr="method" value="PUT"/>
+    <api:call op="jsonproviderGet">
+      <api:throw code="500" desc="Updates are not currently supported."/>
+      <api:push/>
+    </api:call>
+  </api:script>
+
+  <!-- To add support for DELETES please see the DELETE Execution page within the help for further information and examples. -->
+  <api:script method="DELETE">
+    <api:set attr="method" value="DELETE"/>
+    <api:call op="jsonproviderGet">
+      <api:throw code="500" desc="Deletes are not currently supported."/>
+      <api:push/>
+    </api:call>
+  </api:script>
+
+</api:script>
